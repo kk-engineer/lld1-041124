@@ -18,7 +18,6 @@ public class Client {
         //l1.whoAmI();
         l1.abc();
 
-        Animal a = new Lion();
 
         // Method overriding
 //        Animal a1 = new Lion("Leo");
@@ -36,31 +35,31 @@ public class Client {
     }
 
     private static void demoInheritance() {
-        //Lion lion = new Lion();
-//        Lion lion1 = new Lion("Simba");
-//        lion1.whoAmI();
+        Lion lion = new Lion();
+        Lion lion1 = new Lion("Simba");
+        lion1.whoAmI();
 
-//        Animal a1 = new Lion("Leo");
-//        a1.whoAmI();
+        Animal a1 = new Lion("Leo");
+        a1.whoAmI();
 
-//        Animal a2 = new Animal("Animal");
-//        a2.whoAmI();
+        Animal a2 = new Animal("Animal");
+        a2.whoAmI();
 
 
         // TypeCasting
 
         Animal a3 = new Cat("Tom");
-//        Animal a4 = new Dog("Spike");
-//        a4.whoAmI();
-//        Dog d1 = (Dog) a4;
-//        d1.whoAmI();
+        Animal a4 = new Dog("Spike");
+        a4.whoAmI();
+        Dog d1 = (Dog) a4;
+        d1.whoAmI();
 
         // Double check before casting
         // avoid casting - as far as possible
         //Dog d2 = (Dog) a3; // ClassCastException
 //        d2.whoAmI();
 
-        Animal a4 = new Dog("Spike");
+        // Animal a4 = new Dog("Spike");
         // a4.play(); wont compile
         Dog d3 = (Dog) a4;
         d3.play();
